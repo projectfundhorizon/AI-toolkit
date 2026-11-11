@@ -5,8 +5,9 @@ Reusable prompts, agents and commands for Claude Code. Build them once here, use
 ## What is inside
 | Folder | What |
 |---|---|
-| `agents/` | Specialists: `planner`, `prompt-writer`, `tester`, `security-auditor`, `product-auditor` |
-| `commands/` | Shortcuts you type: `/plan` `/prompt` `/test` `/audit` `/review` `/staging` `/promote` |
+| `agents/` | Specialists: `planner`, `prompt-writer`, `tester`, `security-auditor`, `product-auditor`, `app-auditor` (speed + data safety) |
+| `commands/` | Shortcuts you type: `/plan` `/prompt` `/test` `/audit` `/app-audit` `/review` `/staging` `/promote` |
+| `scripts/` | `app-audit.mjs`: a read-only speed and data-safety check the `app-auditor` agent runs. Copy it into a project's `scripts/` folder (it is made for plain-JS apps on Vercel) |
 | `prompts/` | Long prompts to paste: full audit + test, build-a-feature skeleton |
 | `templates/CLAUDE.md` | Starter rules file to drop into any new repo |
 | `docs/how-agents-work.md` | Plain-English guide: what agents are, when to use them |
